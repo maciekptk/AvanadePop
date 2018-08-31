@@ -27,7 +27,7 @@ public class SearchResultsPage extends MainPage {
 
     public AddedToCartConfirmationPage clickAddToCartButton() {
         driver.findElement(addToCartButton).click();
-        return new AddedToCartConfirmationPage(driver, wait);
+        return new AddedToCartConfirmationPage(driver);
     }
 
 }

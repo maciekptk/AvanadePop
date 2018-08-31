@@ -17,8 +17,8 @@ public class AddedToCartConfirmationPage extends BasePage {
     private By actualQuantity = By.cssSelector("#layer_cart_product_quantity");
     private By actualSize = By.cssSelector("[class='layer_cart_product_info']");
 
-    public AddedToCartConfirmationPage(WebDriver driver, WebDriverWait wait) {
-        super(driver, wait);
+    public AddedToCartConfirmationPage(WebDriver driver) {
+        super(driver);
     }
 
     public String getConfirmationMessage() {

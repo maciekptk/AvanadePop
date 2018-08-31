@@ -15,7 +15,7 @@ public class ProductDetailsPage extends BasePage {
 
 
     public ProductDetailsPage(WebDriver driver, WebDriverWait wait) {
-        super(driver, wait);
+        super(driver);
     }
 
     public ProductDetailsPage setQuantity(String quantity) {
@@ -31,6 +31,6 @@ public class ProductDetailsPage extends BasePage {
 
     public AddedToCartConfirmationPage clickAddToCartButton() {
         driver.findElement(addToCartButton).click();
-        return new AddedToCartConfirmationPage(driver, wait);
+        return new AddedToCartConfirmationPage(driver);
     }
 }

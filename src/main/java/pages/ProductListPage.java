@@ -20,7 +20,7 @@ public class ProductListPage extends BasePage {
 
 
     public ProductListPage(WebDriver driver, WebDriverWait wait) {
-        super(driver, wait);
+        super(driver);
     }
 
     public List<WebElement> getDiscountProducts() {
